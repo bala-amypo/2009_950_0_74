@@ -1,8 +1,13 @@
-package com.example.demo.repository;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.data.Jpa.Repository;
-import org.springframework.sterotype.Repository;
-@Repository
-public interface StudentRepo extends JpaRepository{
+spring.datasource.url=jdbc:mysql://localhost:3306/sample?createDatabaseIfNotExist=true
+spring.datasource.username=root
+spring.datasource.password=root
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
-}
+
+
+spring.jpa.hibernate.ddl-auto=update
+
+
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
